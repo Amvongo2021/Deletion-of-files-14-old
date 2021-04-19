@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#DESCRIPTION: Deletion of logs 14 days old from /var/logs
+#Author: Alain
+#Date : April 2021
+
+find /var/log  -mtime +14 -type f -delete
+exit 0
